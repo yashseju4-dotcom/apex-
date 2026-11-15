@@ -57,10 +57,6 @@
 
 ---
 
-## How to Run
-1. Extract the ZIP
-2. Open `index.html` in any modern browser (Chrome / Edge / Firefox)
-3. No server or installation required
 
 ## Folder Structure
 ```
@@ -70,8 +66,8 @@ pc-build-shop/
 ├── components.html
 ├── custom.html
 ├── contact.html
-├── css/styles.css
-├── images/          (local product images)
+├── styles.css
+├── images
 └── README.md
 ```
 
