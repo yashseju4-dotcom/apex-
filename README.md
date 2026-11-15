@@ -1,8 +1,8 @@
 # NexusForge PC — Web Development Project
 ## BCA / MCA (Integrated) Semester-I
 
-**Topic:** Static 5-Page Website for a PC Build Shop  
-**University:** Lok Jagruti Kendra University (as per given syllabus)
+**Topic:** Static-Website for a PC Build Shop (NexusForge PC) 
+**University:** Lok Jagruti Kendra University
 
 ---
 
