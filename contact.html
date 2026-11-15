@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | NexusForge</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">⚡</div>
+        <span>NexusForge</span>
+      </a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="builds.html">Pre-built PCs</a></li>
+          <li><a href="components.html">Components</a></li>
+          <li><a href="custom.html">Custom Build</a></li>
+          <li><a href="contact.html" class="active nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" onclick="document.getElementById('navLinks').classList.toggle('show')">☰</button>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <h1>Get in Touch</h1>
+    <p>Questions, support, or partnership? We’d love to hear from you.</p>
+  </div>
+
+  <section class="section">
+    <div class="contact-grid">
+      <!-- Info -->
+      <div class="contact-info">
+        <div class="info-card">
+          <div class="info-icon">📍</div>
+          <div>
+            <h3 style="margin-bottom:6px;">Visit Us</h3>
+            <p style="color:var(--text-muted); font-size:0.95rem;">Shop 12, Tech Plaza,<br>CG Road, Ahmedabad – 380009<br>Gujarat, India</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">📞</div>
+          <div>
+            <h3 style="margin-bottom:6px;">Call / WhatsApp</h3>
+            <p style="color:var(--text-muted); font-size:0.95rem;">+91 98765 43210<br>Mon – Sat: 10 AM – 8 PM</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">✉️</div>
+          <div>
+            <h3 style="margin-bottom:6px;">Email</h3>
+            <p style="color:var(--text-muted); font-size:0.95rem;">hello@nexusforge.in<br>support@nexusforge.in</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">⏱️</div>
+          <div>
+            <h3 style="margin-bottom:6px;">Response Time</h3>
+            <p style="color:var(--text-muted); font-size:0.95rem;">Usually within 2–4 hours during business hours.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="form-container" style="margin:0;">
+        <form action="#" method="post">
+          <h3 style="margin-bottom:24px; font-family:'Orbitron',sans-serif;">Send a Message</h3>
+          
+          <div class="form-group">
+            <label for="cname">Your Name *</label>
+            <input type="text" id="cname" name="name" required placeholder="Full name">
+          </div>
+          
+          <div class="form-group">
+            <label for="cemail">Email *</label>
+            <input type="email" id="cemail" name="email" required placeholder="you@example.com">
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="general">General Inquiry</option>
+              <option value="support">Technical Support</option>
+              <option value="order">Order Status</option>
+              <option value="warranty">Warranty Claim</option>
+              <option value="business">Business / Bulk</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="5" required placeholder="How can we help you?"></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- About mini -->
+  <section class="section">
+    <div class="section-header">
+      <h2>About NexusForge</h2>
+      <p>Started by passionate PC enthusiasts, we believe every gamer and creator deserves a machine that feels personal. From carefully selected components to meticulous assembly and thorough testing — quality is non-negotiable.</p>
+    </div>
+    <div class="features">
+      <div class="feature-card">
+        <div class="feature-icon">🔧</div>
+        <h3>Hand-Assembled</h3>
+        <p>No mass production lines. Every system is built by experienced technicians with attention to cable management and airflow.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🧪</div>
+        <h3>Burn-In Tested</h3>
+        <p>24–48 hour stress testing under load ensures stability before your PC ever leaves our workshop.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💬</div>
+        <h3>Lifetime Support</h3>
+        <p>Lifetime technical guidance. Whether it’s driver updates or upgrade advice — we’re here for the long run.</p>
+      </div>
+    </div>
+
+    <!-- Ordered + Nested List + Definition List (Unit I) -->
+    <div style="margin-top:48px; display:grid; grid-template-columns:1fr 1fr; gap:40px;">
+      <div>
+        <h3 style="margin-bottom:16px; color:var(--accent);">Our Build Process</h3>
+        <ol style="padding-left:20px; color:var(--text-muted); line-height:1.8;">
+          <li>Consultation &amp; requirement gathering</li>
+          <li>Component selection
+            <ul style="margin-top:6px;">
+              <li>CPU &amp; Motherboard matching</li>
+              <li>GPU &amp; Power supply calculation</li>
+              <li>Cooling solution planning</li>
+            </ul>
+          </li>
+          <li>Assembly with proper cable management</li>
+          <li>24–48 hour stress testing</li>
+          <li>Quality check &amp; packaging</li>
+        </ol>
+      </div>
+      <div>
+        <h3 style="margin-bottom:16px; color:var(--accent);">Key Terms</h3>
+        <dl style="color:var(--text-muted);">
+          <dt style="color:var(--text); font-weight:600; margin-top:12px;">AIO</dt>
+          <dd style="margin-left:16px;">All-In-One liquid cooler for efficient CPU cooling.</dd>
+          <dt style="color:var(--text); font-weight:600; margin-top:12px;">NVMe</dt>
+          <dd style="margin-left:16px;">High-speed solid-state storage interface (much faster than SATA).</dd>
+          <dt style="color:var(--text); font-weight:600; margin-top:12px;">RGB</dt>
+          <dd style="margin-left:16px;">Customizable lighting system used for aesthetics.</dd>
+          <dt style="color:var(--text); font-weight:600; margin-top:12px;">PSU</dt>
+          <dd style="margin-left:16px;">Power Supply Unit – converts AC to DC power for components.</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">⚡</div>
+          <span>NexusForge</span>
+        </a>
+        <p>Premium PC building experience. Performance engineered for gamers, creators, and professionals.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul class="footer-links">
+          <li><a href="builds.html">Pre-built PCs</a></li>
+          <li><a href="components.html">Components</a></li>
+          <li><a href="custom.html">Custom Build</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html">Warranty</a></li>
+          <li><a href="contact.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">About</a></li>
+          <li><a href="contact.html">Careers</a></li>
+          <li><a href="contact.html">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 NexusForge PC • BCA Semester-1 Web Development Project
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pre-built PCs | NexusForge</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">⚡</div>
+        <span>NexusForge</span>
+      </a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="builds.html" class="active">Pre-built PCs</a></li>
+          <li><a href="components.html">Components</a></li>
+          <li><a href="custom.html">Custom Build</a></li>
+          <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" onclick="document.getElementById('navLinks').classList.toggle('show')">☰</button>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <h1>Pre-built Gaming PCs</h1>
+    <p>Ready-to-play systems. Zero compromise on performance or aesthetics.</p>
+  </div>
+
+  <section class="section">
+    <div class="filter-bar">
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Budget</button>
+      <button class="filter-btn">Mid-Range</button>
+      <button class="filter-btn">High-End</button>
+      <button class="filter-btn">Creator</button>
+    </div>
+
+    <!-- Comparison Table with colspan & rowspan (Unit I) -->
+    <div style="overflow-x:auto; margin-bottom:48px;">
+      <table class="compare-table">
+        <caption>Quick Comparison of Our Top Builds</caption>
+        <thead>
+          <tr>
+            <th rowspan="2">Model</th>
+            <th colspan="2">Processor &amp; Graphics</th>
+            <th rowspan="2">RAM</th>
+            <th rowspan="2">Storage</th>
+            <th rowspan="2">Price</th>
+          </tr>
+          <tr>
+            <th>CPU</th>
+            <th>GPU</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Apex Starter</strong></td>
+            <td>Ryzen 5 5600</td>
+            <td>RTX 3060</td>
+            <td>16GB DDR4</td>
+            <td>512GB SSD</td>
+            <td>₹54,999</td>
+          </tr>
+          <tr>
+            <td><strong>Shadow Strike</strong></td>
+            <td>i5-14600KF</td>
+            <td>RTX 4060 Ti</td>
+            <td>16GB DDR5</td>
+            <td>1TB NVMe</td>
+            <td>₹89,999</td>
+          </tr>
+          <tr>
+            <td><strong>Phantom Pro</strong></td>
+            <td>Ryzen 7 7800X3D</td>
+            <td>RTX 4070 Super</td>
+            <td>32GB DDR5</td>
+            <td>2TB NVMe</td>
+            <td>₹1,49,999</td>
+          </tr>
+          <tr>
+            <td><strong>Titan X</strong></td>
+            <td>i9-14900K</td>
+            <td>RTX 4080 Super</td>
+            <td>64GB DDR5</td>
+            <td>4TB NVMe</td>
+            <td>₹2,89,999</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="product-grid">
+      <!-- Build 1 -->
+      <article class="product-card">
+        <div class="product-img">
+          <img src="pc1.jpg" alt="Shadow Strike">
+          <span class="product-badge">BEST SELLER</span>
+        </div>
+        <div class="product-body">
+          <h3>Shadow Strike</h3>
+          <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:8px;">Perfect entry into 1440p gaming</p>
+          <ul class="product-specs">
+            <li>Intel Core i5-14600KF</li>
+            <li>NVIDIA RTX 4060 Ti 8GB</li>
+            <li>16GB DDR5-6000</li>
+            <li>1TB WD Black SN850X</li>
+            <li>650W 80+ Gold PSU</li>
+            <li>ARGB Mid-Tower Case</li>
+          </ul>
+          <div class="product-footer">
+            <span class="price">₹89,999</span>
+            <a href="custom.html" class="btn btn-primary btn-sm">Configure</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Build 2 -->
+      <article class="product-card">
+        <div class="product-img">
+          <img src="pc2.jpg" alt="Phantom Pro">
+          <span class="product-badge">NEW</span>
+        </div>
+        <div class="product-body">
+          <h3>Phantom Pro</h3>
+          <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:8px;">Ray-tracing ready powerhouse</p>
+          <ul class="product-specs">
+            <li>AMD Ryzen 7 7800X3D</li>
+            <li>NVIDIA RTX 4070 Super</li>
+            <li>32GB DDR5-6400</li>
+            <li>2TB Samsung 990 Pro</li>
+            <li>850W Platinum PSU</li>
+            <li>Lian Li O11 Dynamic</li>
+          </ul>
+          <div class="product-footer">
+            <span class="price">₹1,49,999</span>
+            <a href="custom.html" class="btn btn-primary btn-sm">Configure</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Build 3 -->
+      <article class="product-card">
+        <div class="product-img">
+          <img src="pc3.jpg" alt="Titan X">
+        </div>
+        <div class="product-body">
+          <h3>Titan X</h3>
+          <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:8px;">4K gaming + content creation</p>
+          <ul class="product-specs">
+            <li>Intel Core i9-14900K</li>
+            <li>NVIDIA RTX 4080 Super</li>
+            <li>64GB DDR5-6000</li>
+            <li>4TB NVMe (2×2TB)</li>
+            <li>1200W Titanium PSU</li>
+            <li>Custom Loop Ready</li>
+          </ul>
+          <div class="product-footer">
+            <span class="price">₹2,89,999</span>
+            <a href="custom.html" class="btn btn-primary btn-sm">Configure</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Build 4 -->
+      <article class="product-card">
+        <div class="product-img">
+          <img src="case.jpg" alt="Apex Starter">
+        </div>
+        <div class="product-body">
+          <h3>Apex Starter</h3>
+          <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:8px;">Best value 1080p warrior</p>
+          <ul class="product-specs">
+            <li>AMD Ryzen 5 5600</li>
+            <li>RTX 3060 12GB</li>
+            <li>16GB DDR4-3200</li>
+            <li>512GB NVMe SSD</li>
+            <li>550W Bronze PSU</li>
+            <li>Compact Mesh Case</li>
+          </ul>
+          <div class="product-footer">
+            <span class="price">₹54,999</span>
+            <a href="custom.html" class="btn btn-primary btn-sm">Configure</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Build 5 -->
+      <article class="product-card">
+        <div class="product-img">
+          <img src="setup.jpg" alt="Creator Studio">
+          <span class="product-badge">CREATOR</span>
+        </div>
+        <div class="product-body">
+          <h3>Creator Studio</h3>
+          <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:8px;">Optimized for video & 3D</p>
+          <ul class="product-specs">
+            <li>AMD Ryzen 9 7950X</li>
+            <li>RTX 4070 Ti Super</li>
+            <li>64GB DDR5 ECC</li>
+            <li>2TB + 4TB HDD</li>
+            <li>1000W Gold PSU</li>
+            <li>Quiet Workstation Case</li>
+          </ul>
+          <div class="product-footer">
+            <span class="price">₹2,19,999</span>
+            <a href="custom.html" class="btn btn-primary btn-sm">Configure</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Build 6 -->
+      <article class="product-card">
+        <div class="product-img">
+          <img src="hero.jpg" alt="Neon Elite">
+          <span class="product-badge">RGB</span>
+        </div>
+        <div class="product-body">
+          <h3>Neon Elite</h3>
+          <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:8px;">Showpiece build with full RGB</p>
+          <ul class="product-specs">
+            <li>Intel Core i7-14700KF</li>
+            <li>RTX 4070 12GB</li>
+            <li>32GB DDR5 RGB</li>
+            <li>2TB NVMe</li>
+            <li>850W RGB PSU</li>
+            <li>Full Tempered Glass</li>
+          </ul>
+          <div class="product-footer">
+            <span class="price">₹1,29,999</span>
+            <a href="custom.html" class="btn btn-primary btn-sm">Configure</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">⚡</div>
+          <span>NexusForge</span>
+        </a>
+        <p>Premium PC building experience. Performance engineered for gamers, creators, and professionals.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul class="footer-links">
+          <li><a href="builds.html">Pre-built PCs</a></li>
+          <li><a href="components.html">Components</a></li>
+          <li><a href="custom.html">Custom Build</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html">Warranty</a></li>
+          <li><a href="contact.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">About</a></li>
+          <li><a href="contact.html">Careers</a></li>
+          <li><a href="contact.html">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 NexusForge PC • BCA Semester-1 Web Development Project
+    </div>
+  </footer>
+</body>
+</html>

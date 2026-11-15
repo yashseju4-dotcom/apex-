@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom PC Builder | NexusForge</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Internal CSS example (Unit III - Ways to apply CSS) -->
+  <style>
+    .form-note {
+      font-size: 0.85rem;
+      color: #9aa0a6;
+      margin-top: 6px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">⚡</div>
+        <span>NexusForge</span>
+      </a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="builds.html">Pre-built PCs</a></li>
+          <li><a href="components.html">Components</a></li>
+          <li><a href="custom.html" class="active">Custom Build</a></li>
+          <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" onclick="document.getElementById('navLinks').classList.toggle('show')">☰</button>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <h1>Custom PC Builder</h1>
+    <p>Tell us your needs. We’ll design and build the perfect system for you.</p>
+  </div>
+
+  <section class="section">
+    <div class="form-container">
+      <form action="#" method="post" enctype="multipart/form-data">
+        <h2 style="font-family:'Orbitron',sans-serif; margin-bottom:8px; text-align:center;">Build Request Form</h2>
+        <p style="text-align:center; color:var(--text-muted); margin-bottom:32px;">
+          Fill in the details below. Our team will contact you within 24 hours.
+        </p>
+
+        <!-- Personal Information Fieldset -->
+        <fieldset style="border:1px solid var(--border); border-radius:12px; padding:20px; margin-bottom:28px;">
+          <legend style="padding:0 10px; color:var(--accent); font-weight:600;">Personal Information</legend>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required minlength="3" maxlength="50" 
+                     pattern="[A-Za-z\s]{3,50}" placeholder="Enter your full name" 
+                     title="Only letters and spaces (3-50 characters)">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="you@example.com">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10"
+                     placeholder="9876543210" title="10-digit mobile number">
+            </div>
+            <div class="form-group">
+              <label for="password">Account Password (optional)</label>
+              <input type="password" id="password" name="password" minlength="6" 
+                     placeholder="Create a password for order tracking">
+              <p class="form-note">Minimum 6 characters</p>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Build Preferences Fieldset -->
+        <fieldset style="border:1px solid var(--border); border-radius:12px; padding:20px; margin-bottom:28px;">
+          <legend style="padding:0 10px; color:var(--accent); font-weight:600;">Build Preferences</legend>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="budget">Budget Range *</label>
+              <select id="budget" name="budget" required>
+                <option value="">Select budget</option>
+                <optgroup label="Entry Level">
+                  <option value="50k">Under ₹50,000</option>
+                  <option value="50-80">₹50,000 – ₹80,000</option>
+                </optgroup>
+                <optgroup label="Mid to High">
+                  <option value="80-120">₹80,000 – ₹1,20,000</option>
+                  <option value="120-180">₹1,20,000 – ₹1,80,000</option>
+                  <option value="180+">₹1,80,000+</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="delivery">Preferred Delivery Date</label>
+              <input type="date" id="delivery" name="delivery" min="2026-11-10">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="quantity">Number of Systems</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+          </div>
+
+          <div class="form-group">
+            <label>Primary Use Case *</label>
+            <div class="radio-group">
+              <label class="radio-item"><input type="radio" name="usecase" value="gaming" required> Gaming</label>
+              <label class="radio-item"><input type="radio" name="usecase" value="content"> Content Creation</label>
+              <label class="radio-item"><input type="radio" name="usecase" value="office"> Office / Study</label>
+              <label class="radio-item"><input type="radio" name="usecase" value="streaming"> Streaming</label>
+              <label class="radio-item"><input type="radio" name="usecase" value="mixed"> Mixed / General</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Preferred Resolution</label>
+            <div class="radio-group">
+              <label class="radio-item"><input type="radio" name="resolution" value="1080p"> 1080p (Full HD)</label>
+              <label class="radio-item"><input type="radio" name="resolution" value="1440p"> 1440p (QHD)</label>
+              <label class="radio-item"><input type="radio" name="resolution" value="4k"> 4K (UHD)</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Preferred Features</label>
+            <div class="checkbox-group">
+              <label class="checkbox-item"><input type="checkbox" name="features" value="rgb"> RGB Lighting</label>
+              <label class="checkbox-item"><input type="checkbox" name="features" value="aio"> Liquid Cooling (AIO)</label>
+              <label class="checkbox-item"><input type="checkbox" name="features" value="wifi"> Wi-Fi 6/6E</label>
+              <label class="checkbox-item"><input type="checkbox" name="features" value="quiet"> Silent Operation</label>
+              <label class="checkbox-item"><input type="checkbox" name="features" value="compact"> Compact Size</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="cpu">Preferred CPU Brand</label>
+            <select id="cpu" name="cpu">
+              <option value="">No preference</option>
+              <option value="intel">Intel</option>
+              <option value="amd">AMD</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <!-- Additional Details -->
+        <fieldset style="border:1px solid var(--border); border-radius:12px; padding:20px; margin-bottom:28px;">
+          <legend style="padding:0 10px; color:var(--accent); font-weight:600;">Additional Details</legend>
+
+          <div class="form-group">
+            <label for="notes">Special Requirements / Notes</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Mention any specific games, software, or preferences..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="reference">Upload Reference Image (optional)</label>
+            <input type="file" id="reference" name="reference" accept="image/*">
+            <p class="form-note">Accepted formats: JPG, PNG (max 5MB)</p>
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <label class="checkbox-item">
+            <input type="checkbox" name="agree" required> 
+            I agree to be contacted regarding this build request and accept the <a href="contact.html" style="color:var(--accent);">terms</a>.
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; margin-top:8px;">
+          Submit Build Request →
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">⚡</div>
+          <span>NexusForge</span>
+        </a>
+        <p>Premium PC building experience. Performance engineered for gamers, creators, and professionals.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul class="footer-links">
+          <li><a href="builds.html">Pre-built PCs</a></li>
+          <li><a href="components.html">Components</a></li>
+          <li><a href="custom.html">Custom Build</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="mailto:support@nexusforge.in">Email Support</a></li>
+          <li><a href="contact.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">About</a></li>
+          <li><a href="contact.html">Careers</a></li>
+          <li><a href="contact.html">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 NexusForge PC • BCA / MCA Semester-I Web Development Project
+    </div>
+  </footer>
+</body>
+</html>
